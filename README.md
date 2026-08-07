@@ -33,7 +33,7 @@ Sources: U.S. Bureau of Labor Statistics (BLS, May 2024 wage/employment data, 20
 
 ## Status
 
-🚧 Early stage — data collected, project structure scaffolded, modeling approach not yet finalized.
+🚧 Early stage — data collected.
 
 ## Setup
 
