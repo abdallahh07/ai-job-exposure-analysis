@@ -1,1 +1,21 @@
-name: ci
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: install dependencies
+        run: pip install -r requirements.txt
+      - name: Run pipeline
+        run: python train_pipeline.py
