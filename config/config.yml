@@ -1,0 +1,17 @@
+pipeline_name: ai-job-exposure-analysis
+pipeline_save_file: trained_model/final_model.pkl
+
+data_folder: data/
+ai_exposure: ai_job_exposure.csv
+cognitive_ability: cognitive_ability_ai_exposure.csv
+occupation_cognitive: occupation_cognitive_profile.csv
+
+target: ai_exposure_level
+
+test_size: 0.2
+
+features_to_drop:
+  - ai_exposure_llm_human
+  - ai_exposure_llm_gpt4
+  - ai_exposure_aioe
+  - ai_exposure_level
